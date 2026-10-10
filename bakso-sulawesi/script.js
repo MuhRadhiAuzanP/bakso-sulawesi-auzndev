@@ -3,7 +3,7 @@ const menuData = [
     { id: 'b1', name: 'Bakso Sulawesi', category: 'Bakso', price: 20000, icon: 'fa-bowl-food' },
     { id: 'b2', name: 'Bakso Tempur', category: 'Bakso', price: 22000, icon: 'fa-bowl-food' },
     { id: 'b3', name: 'Bakso Komplit', category: 'Bakso', price: 30000, icon: 'fa-bowl-food' },
-    { id: 'b4', name: 'Gorengan Pangsit', category: 'Bakso', price: 10000, icon: 'fa-cookie' },
+    { id: 'b4', name: 'Gorengan', category: 'Bakso', price: 10000, icon: 'fa-cookie' },
     { id: 'b5', name: 'Bakso Urat', category: 'Bakso', price: 10000, icon: 'fa-bowl-food' },
     { id: 'b6', name: 'Bakso Telor', category: 'Bakso', price: 10000, icon: 'fa-bowl-food' },
     { id: 'b7', name: 'Indomie', category: 'Bakso', price: 5000, icon: 'fa-bowl-rice' },
@@ -156,12 +156,7 @@ function sendToWhatsApp() {
         return;
     }
 
-    let waMessage = `*PESANAN BARU - BAKSO SULAWESI*\n`;
-    waMessage += `━━━━━━━━━━━━━━━━━━━\n`;
-    waMessage += `📍 *${noMeja}*\n`;
-    waMessage += `⏰ Waktu: ${new Date().toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' })}\n`;
-    waMessage += `━━━━━━━━━━━━━━━━━━━\n\n`;
-    waMessage += `*Daftar Menu:*\n`;
+    let waMessage = `📍 *${noMeja}*\n`;
 
     let grandTotal = 0;
     cart.forEach((item, index) => {
@@ -171,7 +166,6 @@ function sendToWhatsApp() {
     });
 
     waMessage += `\n📝 *Catatan:* ${catatan || 'Tidak ada'}\n`;
-    waMessage += `━━━━━━━━━━━━━━━━━━━\n`;
     waMessage += `💰 *Total Harga: Rp ${grandTotal.toLocaleString('id-ID')}*\n`;
 
     const encodedMessage = encodeURIComponent(waMessage);
