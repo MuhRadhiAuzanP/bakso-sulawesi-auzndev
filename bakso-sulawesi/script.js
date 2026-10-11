@@ -3,10 +3,10 @@ const menuData = [
     { id: 'b1', name: 'Bakso Sulawesi', category: 'Bakso', price: 20000, icon: 'fa-bowl-food' },
     { id: 'b2', name: 'Bakso Tempur', category: 'Bakso', price: 22000, icon: 'fa-bowl-food' },
     { id: 'b3', name: 'Bakso Komplit', category: 'Bakso', price: 30000, icon: 'fa-bowl-food' },
-    { id: 'b4', name: 'Gorengan', category: 'Bakso', price: 10000, icon: 'fa-cookie' },
+    { id: 'b4', name: 'Gorengan Bakso', category: 'Bakso', price: 10000, icon: 'fa-cookie' },
     { id: 'b5', name: 'Bakso Urat', category: 'Bakso', price: 10000, icon: 'fa-bowl-food' },
     { id: 'b6', name: 'Bakso Telor', category: 'Bakso', price: 10000, icon: 'fa-bowl-food' },
-    { id: 'b7', name: 'Indomie', category: 'Bakso', price: 5000, icon: 'fa-bowl-rice' },
+    { id: 'b7', name: '+Indomie', category: 'Bakso', price: 5000, icon: 'fa-bowl-rice' },
     
     // Section Mie Ayam
     { id: 'm1', name: 'Mie Pangsit Doyan', category: 'Mie Ayam', price: 20000, icon: 'fa-utensils' },
@@ -14,18 +14,19 @@ const menuData = [
     { id: 'm3', name: 'Mie Pangsit Bakso', category: 'Mie Ayam', price: 28000, icon: 'fa-utensils' },
     { id: 'm4', name: 'Mie Pangsit Tempur', category: 'Mie Ayam', price: 30000, icon: 'fa-utensils' },
     { id: 'm5', name: 'Mie Pangsit Komplit', category: 'Mie Ayam', price: 34000, icon: 'fa-utensils' },
-    { id: 'm6', name: 'Pangsit Rebus', category: 'Mie Ayam', price: 12000, icon: 'fa-dumpling' },
+    { id: 'm6', name: 'Pangsit Rebus', category: 'Mie Ayam', price: 12000, icon: 'fa-cookie' },
+    { id: 'm7', name: 'Gorengan Pangsit', category: 'Mie Ayam', price: 10000, icon: 'fa-cookie' },
 
     // Section Tambahan
-    { id: 't1', name: 'Es Teh', category: 'Tambahan', price: 5000, icon: 'fa-cup-straw' },
+    { id: 't1', name: 'Es Teh', category: 'Tambahan', price: 5000, icon: 'fa-glass-water' },
     { id: 't2', name: 'Air Mineral', category: 'Tambahan', price: 5000, icon: 'fa-bottle-water' },
     { id: 't3', name: 'Air Gelas', category: 'Tambahan', price: 1000, icon: 'fa-glass-water' },
-    { id: 't4', name: 'Buras', category: 'Tambahan', price: 4000, icon: 'fa-leaf' },
+    { id: 't4', name: 'Buras', category: 'Tambahan', price: 4000, icon: 'fa-cookie' },
     { id: 't5', name: 'Kopi Komi', category: 'Tambahan', price: 13000, icon: 'fa-mug-hot' },
     { id: 't6', name: 'Non Kopi Komi', category: 'Tambahan', price: 13000, icon: 'fa-mug-saucer' },
     { id: 't7', name: 'Kopi Special Komi', category: 'Tambahan', price: 15000, icon: 'fa-mug-hot' },
     { id: 't8', name: 'Ice Chocolate', category: 'Tambahan', price: 15000, icon: 'fa-glass-water' },
-    { id: 't9', name: 'Matcha Komi', category: 'Tambahan', price: 20000, icon: 'fa-cup-straw' },
+    { id: 't9', name: 'Matcha Komi', category: 'Tambahan', price: 20000, icon: 'fa-glass-water' },
 ];
 
 let cart = [];
